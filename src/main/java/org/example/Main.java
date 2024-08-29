@@ -1,6 +1,9 @@
 package org.example;
 
 import org.example.Model.Product;
+import org.example.Repos.OrderListRepo;
+import org.example.Repos.OrderRepo;
+import org.example.Services.ShopService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +12,6 @@ public class Main {
     public static void main(String[] args) {
 
         //Elemente immer über die Main Klasse hinzuzufügen
-
         // Erstellung einer Liste von Produkten
         List<Product> productList = new ArrayList<>();
 
@@ -26,6 +28,9 @@ public class Main {
         productList.add(new Product("O003", "Orange", "Obst", 180, false));
         productList.add(new Product("O004", "Traube", "Obst", 90, true));
         productList.add(new Product("O005", "Birne", "Obst", 110, false));
+
+
+        //Add products
 
     }
 }

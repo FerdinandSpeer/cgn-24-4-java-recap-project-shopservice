@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class ProductRepo {
+public class ProductListRepo {
 
     //Step 2: Implement the ProductRepo class with a list to store products.
 
@@ -51,7 +51,7 @@ public class ProductRepo {
         //Boilerplate der Klasse "ProductRepo":
 
     //Constructor
-    public ProductRepo(List<Product> listOfProducts) {
+    public ProductListRepo(List<Product> listOfProducts) {
         this.listOfProducts = listOfProducts;
     }
     //Getter & Setter
@@ -67,7 +67,7 @@ public class ProductRepo {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ProductRepo that = (ProductRepo) o;
+        ProductListRepo that = (ProductListRepo) o;
         return Objects.equals(listOfProducts, that.listOfProducts);
     }
 
