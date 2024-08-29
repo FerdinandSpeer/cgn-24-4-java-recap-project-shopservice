@@ -43,6 +43,11 @@ public class ProductRepo {
             return listOfProducts;
         }
 
+        //Methode for Product is inStock:
+        public boolean isOnStock(Product product){
+            return listOfProducts.contains(product);
+        }
+
         //Boilerplate der Klasse "ProductRepo":
 
     //Constructor

@@ -6,7 +6,7 @@ import java.util.Map;
 // Step 1: Create a record Order with the necessary attributes.
 public record Order(String orderID,
                     String orderDate,
-                    List<Product> productList,
+                    Product product,
                     boolean inProgress) {
 
 
