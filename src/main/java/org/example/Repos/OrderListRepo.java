@@ -1,12 +1,10 @@
 package org.example.Repos;
 
 import org.example.Model.Order;
+import org.example.Model.Product;
 
 import java.util.*;
 
-/**
- * Create a class OrderListRepo that contains a list of Order objects.
- */
 public class OrderListRepo {
 
     //Step 2: Implement the OrderListRepo class with a list to store orders.
@@ -42,8 +40,8 @@ public class OrderListRepo {
 
     // BOILERPLATE der Klasse OrderRepo:
 
-    public OrderListRepo(List<Order> listOfOrders) {
-        this.listOfOrders = listOfOrders;
+    public OrderListRepo() {
+        this.listOfOrders = new ArrayList<Order>();
     }
 
     public void setListOfOrders(List<Order> listOfOrders) {

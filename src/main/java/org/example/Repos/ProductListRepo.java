@@ -51,8 +51,8 @@ public class ProductListRepo {
         //Boilerplate der Klasse "ProductRepo":
 
     //Constructor
-    public ProductListRepo(List<Product> listOfProducts) {
-        this.listOfProducts = listOfProducts;
+    public ProductListRepo() {
+        this.listOfProducts = new ArrayList<Product>();
     }
     //Getter & Setter
     public List<Product> getListOfProducts() {
