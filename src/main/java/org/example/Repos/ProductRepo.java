@@ -12,6 +12,8 @@ public class ProductRepo {
 
     List<Product> listOfProducts = new ArrayList<>();
 
+    //Step 3: Implement methods to add, remove, and get products (single product and all products).
+
         // Add Methode:
 
         public void addProduct(Product newProduct){
