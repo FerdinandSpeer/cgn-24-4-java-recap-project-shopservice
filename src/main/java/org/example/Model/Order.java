@@ -1,5 +1,6 @@
 package org.example.Model;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
@@ -7,7 +8,10 @@ import java.util.Map;
 public record Order(String orderID,
                     String orderDate,
                     Product product,
-                    boolean inProgress) {
+                    int quantity) {
 
+    public Order withQuantity (int quantity){
+        return new Order(orderID, orderDate, product, quantity);
+    }
 
 }
